@@ -1,0 +1,159 @@
+:root {
+    --branco-principal: white;
+    --cinza--secundario: grey;
+    --botao--cor: rgb(251, 38, 38);
+    --cor--de--fundo: rgb(0, 0, 0);
+    --fonte-principal: 'Courier New'
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--cor--de--fundo);
+    color: var(--branco-principal);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.principal {
+    background-image: url("/assets/catalago2.jpg");
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-position: 100%;
+    align-items: center;
+    text-align: center;
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+}
+
+.container__titulo {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.container__imagem {
+    margin: 1em 0em 2em 0em;
+}
+
+.container__botao {
+    background-color: var(--botao--cor);
+    border-radius: 5px;
+    padding: 1em;
+    color: (var(--branco-principal));
+    display: block;
+    text-decoration: none;
+    margin-bottom: 1em;
+}
+
+.container__botao:hover {
+    font-size: 18px;
+}
+
+.botao_secundario {
+    background-color: transparent;
+    border: 2px solid var(--branco-principal);
+}
+
+.container_box {
+    margin: 0em 3em;
+}
+
+.container__aviso {
+    font-size: 0.6rem;
+    color: var(--cinza--secundario);
+}
+
+.secundario__imagem {
+    width: 80%;
+}
+
+.secundario {
+    align-items: center;
+    margin: 0 6em;
+}
+
+.descricao_titulo {
+    font-weight: 700;
+    font-size: 2rem;
+    color: var(--branco-principal);
+    margin-bottom: 0.1em;
+}
+
+.descricao_texto {
+    color: var(--cinza--secundario);
+}
+
+.secundario__botao {
+    display: inline-block;
+    margin-top: 1em;
+
+}
+
+.container__descricao {
+    padding: 2em;
+}
+
+.dispositivos__lista {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 5em 0;
+}
+
+.dispositivos {
+    text-align: center;
+
+}
+
+.dispositivos__titulo {
+    font-size: 2rem;
+    color: var(--branco-principal);
+}
+
+.lista__item {
+    font-size: 20px;
+    color: var(--branco-principal);
+}
+
+
+
+.rodape__lista {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin-top: 1em;
+    gap: 6px;
+}
+
+.lista__link a {
+    color: var(--branco-principal);
+    text-decoration: none;
+    margin-left: 1em;
+    font-size: 12px;
+}
+
+.rodape__texto {
+    font-size: 10px;
+    margin: 1em 0;
+    color: var(--cinza--secundario);
+
+}
+
+.lista__link a:hover {
+    color: var(--botao--cor);
+}
+
+
+.rodape {
+    text-align: center;
+    margin: 5em 3em;
+}
